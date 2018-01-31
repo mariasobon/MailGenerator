@@ -1,0 +1,13 @@
+@using maile.ViewModels.Shared
+@model Button
+
+<table cellpadding="0" cellspacing="0" border="0" role="presentation" align="@Model.Align">
+    <tr>
+        <td bgcolor="@Model.Bg_color" style="padding: 10px 20px 10px 20px;" align="center">
+            <a href="@Model.Url" target="_blank" style="text-decoration: none; display: block;"><span style="color: @Model.Color">@Model.Text</span></a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 5px 0;"></td>
+    </tr>
+</table>

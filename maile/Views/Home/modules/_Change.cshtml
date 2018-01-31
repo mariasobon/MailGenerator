@@ -1,0 +1,16 @@
+﻿@using maile.ViewModels.Shared
+@model Change
+
+@if (Model.Value == "UP")
+{
+    <span>(</span><span style="color:#67AE3E">▲</span>
+}
+else if (Model.Value == "DOWN")
+{
+    <span>(</span><span style="color:#FF0000">▼</span>
+}
+else if (Model.Value == "CONST")
+{
+    <span>(</span><span style="color:#B1B1B1">■</span>
+}
+<span>@Model.Text</span>)

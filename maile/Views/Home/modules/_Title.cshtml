@@ -1,0 +1,32 @@
+﻿@using maile.ViewModels.Shared
+@model Title
+<table cellpadding="0" cellspacing="0" style="width: 100%">
+    <tbody>
+        <tr>
+            <td style="padding: 0 10px;">
+                <table cellpadding="0" cellspacing="0" style="width: 100%">
+                    <tbody>
+                        <tr>
+                            <td style="border-bottom: 1px solid #D2D2D2;">
+                                <h2 style="color: #444; font-weight: normal; margin: 5px 0; font-family:&quot;Segoe UI&quot, Roboto, Helvetica, Arial, sans-serif;">
+                                    @if (@Model.Status == "BAD")
+                                    {
+                                        <span style="font-weight: normal; color: #ff0000">●</span>
+                                    }
+                                    else if (@Model.Status == "GOOD")
+                                    {
+                                        <span style="font-weight: normal; color: #67AE3E">●</span>
+                                    }
+                                    @Model.Text
+                                </h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0 0 10px 0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
