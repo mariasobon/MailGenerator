@@ -152,6 +152,7 @@
     <Compile Include="ViewModels\Shared\Footer.cs" />
     <Compile Include="ViewModels\Shared\Img.cs" />
     <Compile Include="ViewModels\Shared\Separator.cs" />
+    <Compile Include="ViewModels\Shared\Paragraph.cs" />
     <Compile Include="ViewModels\Shared\Title.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -207,6 +208,8 @@
       <BrowseToURL>~/Views/Home/modules/_ZO_naklejki.cshtml</BrowseToURL>
     </Content>
     <Content Include="Views\Home\Newsletter_zapach.cshtml" />
+    <Content Include="Views\Home\Example.cshtml" />
+    <Content Include="Views\Home\modules\_Paragraph.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

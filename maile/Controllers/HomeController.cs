@@ -8,6 +8,13 @@ namespace maile.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Example()
+        {
+            ViewBag.CustomFont = "font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+            ViewBag.Title = "Example Mail";
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();

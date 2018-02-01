@@ -9,5 +9,6 @@
         public string Align { get; set; }
         public string Desc { get; set; }
         public string Alt { get; set; }
+        public string Padding { get; set; }
     }
 }
