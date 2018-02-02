@@ -12535,28 +12535,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anna\\.nuget\\packages\\": {},
+    "C:\\Users\\ryszard.raby\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anna\\Documents\\richart\\_git\\MailGenerator\\MailGenerator.csproj",
+      "projectUniqueName": "C:\\_git\\MailGenerator\\MailGenerator.csproj",
       "projectName": "MailGenerator",
-      "projectPath": "C:\\Users\\Anna\\Documents\\richart\\_git\\MailGenerator\\MailGenerator.csproj",
-      "packagesPath": "C:\\Users\\Anna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anna\\Documents\\richart\\_git\\MailGenerator\\obj\\",
+      "projectPath": "C:\\_git\\MailGenerator\\MailGenerator.csproj",
+      "packagesPath": "C:\\Users\\ryszard.raby\\.nuget\\packages\\",
+      "outputPath": "C:\\_git\\MailGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Anna\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ryszard.raby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.portal.internal/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
