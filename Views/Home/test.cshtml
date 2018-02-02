@@ -1,0 +1,26 @@
+@using MailGenerator.ViewModels.Shared
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h1", Align = "center", Color = "#778090", Padding = "10px", Text = "Testowy mail" })
+
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "720", Align = "center", Padding = "20px", Src = "https://i.pinimg.com/originals/2d/ef/ed/2defedfb4e3f44df99ff88ddd72362bb.jpg", Href = "https://www.ceneo.pl/" })
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", Bg_color = "#ffffff" })
+
+@Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "center", Padding = "10px", Text = "To jest przykładowy paragraf z przykładowym tekstem, w przykładowym mailu.<br>Tu jest druga przykładowa linia oddzielona tagiem html." })
+
+@Html.Partial("modules/_Button", new Button() { Bg_color = "#0071C5", Color = "#ffffff", Align = "left", Padding = "10px", Text = "Button", Href = "https://www.ceneo.pl/" })
+
+<table style="width: 100%">
+    <tbody>
+        <tr>
+            <td>
+                @Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "center", Padding = "10px", Text = "To jest przykładowy paragraf z przykładowym tekstem, w przykładowym mailu.<br>Tu jest druga przykładowa linia oddzielona tagiem html." })
+                @Html.Partial("modules/_Button", new Button() { Size = "Small", Bg_color = "#0071C5", Color = "#ffffff", Align = "center", Padding = "10px", Text = "Button", Href = "https://www.ceneo.pl/" })</td>
+            <td>
+                @Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "center", Padding = "10px", Text = "To jest przykładowy paragraf z przykładowym tekstem, w przykładowym mailu.<br>Tu jest druga przykładowa linia oddzielona tagiem html." })
+                @Html.Partial("modules/_Button", new Button() { Size = "Big", Bg_color = "#0071C5", Color = "#ffffff", Align = "center", Padding = "10px", Text = "<font size='6'>Button</font>", Href = "https://www.ceneo.pl/" })</td>
+        </tr>
+    </tbody>
+</table>
+
+@Html.Partial("modules/_Footer", new Footer())
