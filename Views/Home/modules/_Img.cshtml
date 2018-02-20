@@ -8,7 +8,7 @@
                     <a href="@Model.Href" style="text-decoration: none; color: #ffffff;">
                         <img width="@Model.Width" src="@Model.Src" alt="@Model.Alt" style="max-height: @(Model.Height)px; max-width: 100%; width:@(Model.Width)px">
                     </a>
-                @if (Model.Desc != "")
+                @if (Model.Desc != null)
                 {
                     <span style="font-size: 13px; padding: 0 10px; color: #777"><i>@Model.Desc</i></span>
                 }
