@@ -22,6 +22,13 @@ namespace MailGenerator.Controllers
             return View();
         }
 
+        public IActionResult Handmade()
+        {
+            ViewBag.CustomFont = "font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+            ViewBag.Title = "Handmade Mail";
+            return View();
+        }
+
         public IActionResult test()
         {
             ViewBag.CustomFont = "font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
