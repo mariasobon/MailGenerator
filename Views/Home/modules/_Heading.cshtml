@@ -4,8 +4,8 @@
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
     <tbody>
         <tr>
-            <td style="padding: @Model.Padding">
-                <@Model.Tag style="margin: 0; @((Model.Bg_color != null) ? String.Format("background-color:{0};", Model.Bg_color) : null) @(Model.Color != "" ? String.Format("color:{0};", Model.Color) : null) @(Model.Align != "" ? String.Format("text-align:{0};", Model.Align) : null) font-weight: normal; font-family:&quot;Segoe UI&quot, Roboto, Helvetica, Arial, sans-serif;">@Html.Raw(Model.Text)</@Model.Tag>
+            <td style="padding: @Model.Padding; @((Model.Bg_color != null) ? String.Format("background-color:{0};", Model.Bg_color) : null)">
+                <@Model.Tag style="margin: 0; @(Model.Color != "" ? String.Format("color:{0};", Model.Color) : null) @(Model.Align != "" ? String.Format("text-align:{0};", Model.Align) : null) font-weight: normal; font-family:&quot;Segoe UI&quot, Roboto, Helvetica, Arial, sans-serif;">@Html.Raw(Model.Text)</@Model.Tag>
             </td>
         </tr>
     </tbody>
