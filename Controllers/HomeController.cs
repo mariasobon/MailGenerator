@@ -21,14 +21,7 @@ namespace MailGenerator.Controllers
             ViewBag.Title = "Example Mail";
             return View();
         }
-
-        public IActionResult test()
-        {
-            ViewBag.CustomFont = "font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
-            ViewBag.Title = "Example Mail";
-            return View();
-        }
-
+        
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
