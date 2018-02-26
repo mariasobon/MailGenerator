@@ -1,0 +1,111 @@
+@using MailGenerator.ViewModels.Shared
+
+<table cellpadding="0" cellspacing="0" style="width:100%;">
+    <tbody>
+        <tr>
+            <td style="padding: 20px 10px; width: 70%">
+                @Html.Partial("modules/_Heading", new Heading() { Tag = "h1", Align = "left", Color = "#444444", Padding = "0px", Weight = "500", Text = "Ceneo Asystent</b>" })
+                @Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "left", Color = "#444444", Padding = "0px", Weight = "",  Text = "Twój partner w drodze do sukcesu" })
+             </td>
+            <td style="padding: 20px 10px; width: 50%">
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "81", Align = "right", Padding = "10px", Src = "https://www.ceneo.pl/Content/img/icons/logo-ceneo.png", Href = "https://www.ceneo.pl/" })
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+@Html.Partial("modules/_Title", new Title() { Text = "Twoje statystyki z ostatniego tygodnia", Subtitle = "(08.02.2018 - 15.02.2018)", Padding = "0"})
+
+<table style="width:100%;">
+    <tbody>
+        <tr>
+            <td style="padding: 0 10px;">
+                <table cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed">
+                    <tbody>
+                        <tr style="vertical-align: bottom;">
+                            <th style="padding: 10px; width: 50%; text-align: left; "></th>
+                            <th style="padding: 10px; width: 25%; text-align: right;">Wartość</th>
+                            <th style="padding: 10px; width: 25%; text-align: right;">Rada</th>
+                        </tr>
+                        <tr style="background-color: #E8F1F8">
+                            <td style="padding: 10px; width: 50%; text-align: left; ">Potencjalni Kupujący, którzy widzieli Twoją ofertę</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">5 899 @Html.Partial("modules/_Change", new Change() { Text = "820", Value = "UP" })</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Zobacz", Url = "#"})</td>
+                        </tr>
+                        <tr style="background-color: #F9FCFF">
+                            <td style="padding: 10px; width: 50%; text-align: left; ">Ilość przejść </td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">31 546 @Html.Partial("modules/_Change", new Change() { Text = "820", Value = "UP" })</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Zwieksz zasięg", Url = "#"})</td>
+                        </tr>
+                        <tr style="background-color: #E8F1F8">
+                            <td style="padding: 10px; width: 50%; text-align: left; ">Twoje widoczne oferty na Ceneo.pl</td>
+                            <td style="padding: 10px; width: 50%; text-align: right;">22</td>
+                            <td style="padding: 10px; width: 50%; text-align: right;">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Zobacz", Url = "#"})</td>
+                        </tr>
+                        <tr style="background-color: #F9FCFF">
+                            <td style="padding: 10px; width: 50%; text-align: left; ">Środków na koncie wystarczy na</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">18 dni</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Zasil konto!", Url = "#"})</td>
+                        </tr>
+                        <tr style="background-color: #E8F1F8">
+                            <td style="padding: 10px; width: 50%; text-align: left; ">Masz Punkty na promocje</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">963,00 zł</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Wykorzystaj je!", Url = "#"})</td>
+                        </tr>
+                        <tr style="background-color: #F9FCFF">
+                            <td style="padding: 10px; width: 50%; text-align: left; ">Kwota nieopłaconych faktur</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;"><span style="color: #ff0000">2 875,00 zł</span></td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Opłać je!", Url = "#"})</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 0 0 20px 0;"></td>
+        </tr>
+    </tbody>
+</table>
+
+
+@Html.Partial("modules/_Title", new Title() { Text = "Twoje Topowe produkty"})
+
+<table style="width:100%;">
+    <tbody>
+        <tr>
+            <td style="padding: 0 10px;">
+                <table cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed">
+                    <tbody>
+                        <tr style="vertical-align: bottom;">
+                            <th style="padding: 10px; width: 50%; text-align: left; "></th>
+                            <th style="padding: 10px; width: 25%; text-align: right;">Przejścia</th>
+                            <th style="padding: 10px; width: 25%; text-align: right;">Śr. pozycja</th>
+                        </tr>
+                        <tr style="background-color: #E8F1F8">
+                            <td style="padding: 10px; width: 50%; text-align: left; ">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Apple EarPods MD827zM/A", Url = "#"})</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">278</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">1</td>
+                        </tr>
+                        <tr style="background-color: #F9FCFF">
+                            <td style="padding: 10px; width: 50%; text-align: left; ">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Overmax CAMSPOT 4.4", Url = "#"})</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">38</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">3</td>
+                        </tr>
+                        <tr style="background-color: #E8F1F8">
+                            <td style="padding: 10px; width: 50%; text-align: left; ">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Maxcom Mm28D", Url = "#"})</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">34</td>
+                            <td style="padding: 10px; width: 25%; text-align: right;">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 0 0 20px 0;"></td>
+        </tr>
+    </tbody>
+</table>
+
+@Html.Partial("modules/_Footer", new Footer())
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "100px", Bg_color = "#eeeeee" })

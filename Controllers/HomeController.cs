@@ -29,7 +29,7 @@ namespace MailGenerator.Controllers
             return View();
         }
 
-        public IActionResult test()
+        public IActionResult Asistant()
         {
             ViewBag.CustomFont = "font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
             ViewBag.Title = "Example Mail";
