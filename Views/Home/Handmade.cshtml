@@ -1,0 +1,45 @@
+@using MailGenerator.ViewModels.Shared
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "720", Align = "center", Padding = "0", Src = "https://image.ceneostatic.pl/data/article_picture/f5/12/cbd5-1fe8-4292-a3a0-f8034ec00965_large.jpg", Href = "https://www.ceneo.pl/uslugi/Handmade" })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#ffffff", Bg_color="#F89521", Padding = "20px", Text = "Tylko teraz, wypróbuj Ceneo za darmo. Pierwszym 100 osobom doładujemy konto Ceneo kwotą 50 zł." })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "left", Color = "#444444", Padding = "10px", Text = "<b>#Proste zasady</b>" })
+
+
+<table>
+    <tbody>
+        <tr>
+            <td style="width:20%">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "122", Align = "right", Padding = "0", Src = "https://image.ceneostatic.pl/data/article_picture/9e/7e/aa0d-54fd-4fde-983f-6f986185e22f_large.png", Href = "https://www.ceneo.pl/uslugi/Handmade" })</td>
+            <td style="width:80%">@Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "left", Padding = "10px", Text = "U nas jest najtaniej! Płacisz jedynie 15% prowizji za zrealizowaną sprzedaż. ZERO dodatkowych kosztów." })</td>
+        </tr>
+        <tr>
+            <td style="width:20%">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "122", Align = "right", Padding = "0", Src = "https://image.ceneostatic.pl/data/article_picture/87/98/b0b8-cb9a-4406-9af3-6cedd099f61b_large.png", Href = "https://www.ceneo.pl/uslugi/Handmade" })</td>
+            <td style="width:80%">@Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "left", Padding = "10px", Text = "Przystąpisz do Ceneo w 10 minut. Więcej na ten temat <a href='http://dlasklepow.ceneo.pl/jak-zaczac/dla-sprzedawcow-bez-sklepu/'>przeczytasz tutaj</a>." })</td>
+        </tr>
+        <tr>
+            <td style="width:20%">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "122", Align = "right", Padding = "0", Src = "https://image.ceneostatic.pl/data/article_picture/eb/87/763e-ae76-4642-87bd-288295675dc8_large.png", Href = "https://www.ceneo.pl/uslugi/Handmade" })</td>
+            <td style="width:80%">@Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "left", Padding = "10px", Text = "Masz konto na portalu dawanda.pl lub pakamera.pl? To świetnie! Automatycznie przeniesiemy Twoje oferty na Ceneo. Napisz do Nas." })</td>
+        </tr>
+        <tr>
+            <td style="width:20%">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "122", Align = "right", Padding = "0", Src = "https://image.ceneostatic.pl/data/article_picture/ab/21/189e-9dfd-4975-89e7-453d312e395f_large.png", Href = "https://www.ceneo.pl/uslugi/Handmade" })</td>
+            <td style="width:80%">@Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "left", Padding = "10px", Text = "0 zł za wystawienie przedmiotów!" })</td>
+        </tr>
+        <tr>
+            <td style="width:20%">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "122", Align = "right", Padding = "0", Src = "https://image.ceneostatic.pl/data/article_picture/fa/80/b5e2-ce49-4707-a49e-cf37e89f0825_large.png", Href = "https://www.ceneo.pl/uslugi/Handmade" })</td>
+            <td style="width:80%">@Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "left", Padding = "10px", Text = "10 milionów potencjalnych klientów." })</td>
+        </tr>
+                <tr>
+            <td style="width:20%">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "122", Align = "right", Padding = "0", Src = "https://image.ceneostatic.pl/data/article_picture/07/4b/a749-752a-4e06-9d7d-2ac807542d8c_large.png", Href = "https://www.ceneo.pl/uslugi/Handmade" })</td>
+            <td style="width:80%">@Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "left", Padding = "10px", Text = "Szybkie płatności za zero! Oszczędzasz nawet 2,5% prowizji od każdej transakcji." })</td>
+        </tr>
+    </tbody>
+</table>
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#444444", Bg_color="#ffffff", Padding = "20px", Text = "<b>Jeżeli wykonujesz lub oferujesz unikalny asortyment to zapraszamy Cię do hadmade w Ceneo.pl.</b>" })
+@Html.Partial("modules/_Button", new Button() { Bg_color = "#F89521", Color = "#ffffff", Align = "center", Padding = "10px", Text = "Zobacz jak to działa", Href = "https://www.ceneo.pl/uslugi/Handmade" })
+
+@Html.Partial("modules/_Paragraph", new Paragraph() { Bg_color = "#ffffff", Color = "#444444", Align = "center", Padding = "10px", Text = "e-mail: <b style='color: #F89521'>wsparciesklepu@ceneo.pl</b>" })
+
+@Html.Partial("modules/_Footer", new Footer())
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "100px", Bg_color = "#eeeeee" })
