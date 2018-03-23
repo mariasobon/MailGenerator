@@ -36,6 +36,13 @@ namespace MailGenerator.Controllers
             return View();
         }
 
+        public IActionResult Masters()
+        {
+            ViewBag.CustomFont = "font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+            ViewBag.Title = "Landing Page Masters";
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
