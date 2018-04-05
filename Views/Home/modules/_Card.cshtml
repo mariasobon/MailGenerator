@@ -1,0 +1,54 @@
+@using MailGenerator.ViewModels.Shared
+@model Card
+
+@{
+    string ActionText = "", ActionUrl = "", Title = "", Subtitle = "", Color = "", Text = "", Image = "", Width = "", MaxWidth = "";
+    
+    string Font = "font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;";
+    MaxWidth = !string.IsNullOrEmpty(Model.Width) ? String.Format("max-width:{0};", Model.Width) : "width:100%;";
+    Image = !string.IsNullOrEmpty(Model.ImageUrl) ? String.Format("<img width='{0}' src='{1}'>", Model.Width, Model.ImageUrl) : null;
+    Color = !string.IsNullOrEmpty(Model.Color) ? String.Format("color:{0};", Model.Color) : null;
+
+}
+
+<table cellpadding="0" cellspacing="0" border="0" style="@MaxWidth;">
+    <tbody>
+        @{
+            if(!string.IsNullOrEmpty(Model.ImageUrl)){
+                <tr>
+                    <td style="text-align:center">
+                        @Html.Raw(@Image)
+                    </td>
+                </tr>
+            }
+            if(!string.IsNullOrEmpty(Model.Title)){
+                <tr>
+                    <td style="padding: 10px 10px 0 10px">
+                        <h3 style="@Color margin:0; font-weight: 500;">@Model.Title</h3>
+                    </td>
+                </tr>
+            }
+            if(!string.IsNullOrEmpty(Model.Subtitle)){
+                <tr>
+                    <td style="padding: 0 10px 0 10px">
+                        <span style="color:#666; margin:0">@Model.Subtitle</span>
+                    </td>
+                </tr>
+            }
+            if(!string.IsNullOrEmpty(Model.Text)){
+                <tr>
+                    <td style="padding: 10px;">
+                        <span>@Model.Text</span>
+                    </td>
+                </tr>
+            }
+            if(!string.IsNullOrEmpty(Model.ActionText)){
+                <tr>
+                    <td style="text-align: right; padding: 10px">
+                        <a style="@Font @Color text-transform:uppercase; text-decoration: none; font-weight: 500" href="@Model.ActionUrl">@Model.ActionText</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

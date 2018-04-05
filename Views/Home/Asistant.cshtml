@@ -106,6 +106,32 @@
     </tbody>
 </table>
 
+
+@Html.Partial("modules/_Title", new Title() { Text = "Ważne informacje"})
+
+<table cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed; width:100%; border-spacing: 10px; border-collapse: separate!important;">
+    <tbody>
+        <tr>
+            <td style="width: 50%; vertical-align: top; border: 1px solid #dadada;">
+                @Html.Partial("modules/_Card", new Card() {Color = "#2170b9", ActionText = "zasil konto", ActionUrl = "#", Title = "Wkrótce zakończy się wsparcie w licytacji", Subtitle = "w Strefie polecanych ofert.", Text = "Środki przyznane przez [nazwa_providera] na wspieranie licytacji Twoich ofert w najbliższym czasie zostaną wyczerpane.", ImageUrl = "https://t3.ftcdn.net/jpg/01/97/02/06/160_F_197020671_8MpOKOzbcyCpa2ziCnAfVnsseNTyXY3V.jpg" })
+            </td>
+
+            <td style="width: 50%; vertical-align: top; border: 1px solid #dadada;">
+                @Html.Partial("modules/_Card", new Card() {Color = "#c20000", ActionText = "zaloguj się", ActionUrl = "https://shops.ceneo.pl/Subscriptions", Title = "Kończą Ci się środki", Subtitle = "na koncie przedpłat!", Text = "Stan środków na koncie przedpłat sklepu: [domena] w Ceneo.pl osiągnął zdefiniowany przez Ciebie poziom. Zaloguj się pod adresem:  i zasil konto!", ImageUrl = "https://t3.ftcdn.net/jpg/01/97/02/06/160_F_197020671_8MpOKOzbcyCpa2ziCnAfVnsseNTyXY3V.jpg" })
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+@Html.Partial("modules/_Message", new Message() { Status = "Alert", Align = "left", Padding = "10px", Margin = "10px", Weight = "600", Title = "Wkrótce zakończy się wsparcie w licytacji w Strefie polecanych ofert.", Text = "Środki przyznane przez [nazwa_providera] na wspieranie licytacji Twoich ofert w najbliższym czasie zostaną wyczerpane." })
+
+@Html.Partial("modules/_Message", new Message() { Status = "Error", Align = "left", Padding = "10px", Margin = "10px", Weight = "600", ActionText = "Zasil konto", ActionUrl = "https://shops.ceneo.pl/Subscriptions", Title = "Kończą Ci się środki na koncie przedpłat!", Text = "Stan środków na koncie przedpłat sklepu: [domena] w Ceneo.pl osiągnął zdefiniowany przez Ciebie poziom. Zaloguj się pod adresem:  i zasil konto!" })
+
+@Html.Partial("modules/_Message", new Message() { Status = "Success", Align = "left", Padding = "10px", Margin = "10px", Weight = "600", Title = "Otrzymałeś znaczek Zaufane Opinie- gratulujemy!", Text = "Z radością informujemy, że otrzymałeś znaczek Zaufane Opinie. Dzięki temu możesz zacząć cieszyć się z szeregu korzyści. Posiadanie znaczka zwiększa 4Xkrotnie zainteresowanie ofertą oznaczonego sklepu. Teraz Oznaka jest widoczna przy każdej twojej ofercie na Ceneo.pl" })
+
+@Html.Partial("modules/_Message", new Message() { Status = "Info", Align = "left", Padding = "10px", Margin = "10px", Weight = "600", Title = "Wkrótce zakończy się wsparcie w licytacji w Strefie polecanych ofert.", Text = "Środki przyznane przez [nazwa_providera] na wspieranie licytacji Twoich ofert w najbliższym czasie zostaną wyczerpane." })
+
+
 @Html.Partial("modules/_Footer", new Footer())
 
-@Html.Partial("modules/_Separator", new Separator() { Height = "100px", Bg_color = "#eeeeee" })
+@Html.Partial("modules/_Separator", new Separator() { Height = "100px", BgColor = "#eeeeee" })

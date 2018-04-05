@@ -3,6 +3,6 @@
     public class Separator
     {
         public string Height { get; set; }
-        public string Bg_color { get; set; }
+        public string BgColor { get; set; }
     }
 }

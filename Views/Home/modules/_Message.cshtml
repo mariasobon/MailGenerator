@@ -1,0 +1,93 @@
+@using MailGenerator.ViewModels.Shared
+@model Message
+
+
+@{
+    string Font = "", Weight = "", Color = "", Align = "", BgColor = "", Padding = "", Margin = "", Border = "", Icon = "", Status = "";
+
+    if (!string.IsNullOrEmpty(Model.Status)){
+        if (Model.Status == "Success") {
+            Color = "color: #67AE3E;";
+            BgColor = "background-color: #f3ffec;";
+            //Border = "border: 1px solid #67AE3E;";
+        }
+        if (Model.Status == "Alert") {
+            Color = "color: #444444;";
+            BgColor = "background-color: #fffce7;";
+            //Border = "border: 1px solid #ffe400;";
+        }
+        if (Model.Status == "Error") {
+            Color = "color: #c20000;";
+            BgColor = "background-color: #fff4f1;";
+            //Border = "border: 1px solid #c20000;";
+        }
+        if (Model.Status == "Info") {
+            Color = "color: #336c9e;";
+            BgColor = "background-color: #F9FCFF;";
+            //Border = "border: 1px solid #4444;";
+        }
+    }
+    else{
+        Color = !string.IsNullOrEmpty(Model.Color) ? String.Format("color:{0};", Model.Color) : null;
+        BgColor = !string.IsNullOrEmpty(Model.BgColor) ? String.Format("background-color:{0};", Model.BgColor) : null;
+        Border = !string.IsNullOrEmpty(Model.BorderColor) ? String.Format("border:1px solid {0};", Model.BorderColor) : null; 
+    }
+
+
+    Font = "font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;";
+    Weight = !string.IsNullOrEmpty(Model.Weight) ? String.Format("font-weight:{0};", Model.Weight) : "font-weight: normal;";
+    Align = !string.IsNullOrEmpty(Model.Align) ? String.Format("text-align:{0};", Model.Align) : null;
+    Padding = !string.IsNullOrEmpty(Model.Padding) ? String.Format("padding:{0};", Model.Padding) : null;
+    Margin = !string.IsNullOrEmpty(Model.Margin) ? String.Format("padding:{0};", Model.Padding) : null;
+    Status = !string.IsNullOrEmpty(Model.Status) ? String.Format("border:1px solid {0};", Model.BorderColor) : null; 
+
+    var ButtonText = Model.ActionText;
+    var ButtonUrl = Model.ActionUrl;
+}
+
+
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+    <tbody>
+        <tr>
+            <td style="@Margin">
+                <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                    <tbody>
+                        <tr>
+                            <td style="@Padding @Border @BgColor">
+                                <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                                    <tbody>
+                                        @{
+                                        if(!string.IsNullOrEmpty(Model.Title)){
+                                            <tr>
+                                                <td style="padding-bottom: .5em;">
+                                                    <h3 style="margin: 0; @Color @Align @Weight @Font">@Html.Raw(Model.Title)</h3>
+                                                </td>
+                                            </tr>
+                                        }
+                                        if(!string.IsNullOrEmpty(Model.Text)){
+                                            <tr>
+                                                <td style="color: #808080">
+                                                    @Html.Raw(Model.Text)
+                                                </td>
+                                            </tr>
+                                        }
+                                        <tr>
+                                            <td style="padding-top: 1em; text-transform: uppercase; font-weight: 500; text-align:right; @Color">
+                                                @Model.ActionText
+                                            </td>
+                                        </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+

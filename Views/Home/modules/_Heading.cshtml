@@ -7,14 +7,46 @@
     var Weight = !string.IsNullOrEmpty(Model.Weight) ? String.Format("font-weight:{0};", Model.Weight) : "font-weight: normal;";
     var Color = !string.IsNullOrEmpty(Model.Color) ? String.Format("color:{0};", Model.Color) : null;
     var Align = !string.IsNullOrEmpty(Model.Align) ? String.Format("text-align:{0};", Model.Align) : null;
+    var BgColor = !string.IsNullOrEmpty(Model.BgColor) ? String.Format("background-color:{0};", Model.BgColor) : null;
+    var Padding = !string.IsNullOrEmpty(Model.Padding) ? String.Format("padding:{0};", Model.Padding) : null;
+    var Margin = !string.IsNullOrEmpty(Model.Margin) ? String.Format("padding:{0};", Model.Padding) : null;
+    var Border = !string.IsNullOrEmpty(Model.BorderColor) ? String.Format("border:1px solid {0};", Model.BorderColor) : null; 
 }
 
-<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
-    <tbody>
-        <tr>
-            <td style="padding: @Model.Padding; @((Model.Bg_color != null) ? String.Format("background-color:{0};", Model.Bg_color) : null)">
-                <@Model.Tag style="margin: 0; @Color @Align @Weight @Font ">@Html.Raw(Model.Text)</@Model.Tag>
-            </td>
-        </tr>
-    </tbody>
-</table>
+@{
+    
+    if(string.IsNullOrEmpty(Model.Margin)){
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+            <tbody>
+                <tr>
+                    <td style="@Padding @BgColor">
+                        <@Model.Tag style="margin: 0; @Color @Align @Weight @Font ">@Html.Raw(Model.Text)</@Model.Tag>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
+    else{
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+            <tbody>
+                <tr>
+                    <td style="@Margin">
+                        <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+                            <tbody>
+                                <tr>
+                                    <td style="@Padding @BgColor @Border">
+                                        <@Model.Tag style="margin: 0; @Color @Align @Weight @Font ">@Html.Raw(Model.Text)</@Model.Tag>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
+}
+
+
+
+
