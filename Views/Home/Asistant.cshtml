@@ -1,20 +1,20 @@
 @using MailGenerator.ViewModels.Shared
 
-<table cellpadding="0" cellspacing="0" style="width:100%;">
+<table cellpadding="0" cellspacing="0" style="width:100%; background-color: #f7941e">
     <tbody>
         <tr>
             <td style="padding: 20px 10px; width: 70%">
-                @Html.Partial("modules/_Heading", new Heading() { Tag = "h1", Align = "left", Color = "#444444", Padding = "0px", Weight = "500", Text = "Ceneo Asystent</b>" })
-                @Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "left", Color = "#444444", Padding = "0px", Weight = "",  Text = "Twój partner w drodze do sukcesu" })
+                @Html.Partial("modules/_Heading", new Heading() { Tag = "h1", Align = "left", Color = "#ffffff", Padding = "0px", Weight = "500", Text = "Ceneo Asystent</b>" })
+                @Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "left", Color = "#ffffff", Padding = "0px", Weight = "",  Text = "Twój partner w drodze do sukcesu" })
              </td>
-            <td style="padding: 20px 10px; width: 50%">
-                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "81", Align = "right", Padding = "10px", Src = "https://www.ceneo.pl/Content/img/icons/logo-ceneo.png", Href = "https://www.ceneo.pl/" })
+            <td style="padding: 20px 10px; width: 50%; vertical-align: bottom">
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "81", Align = "right", Padding = "", Src = "https://www.ceneo.pl/Content/img/icons/logo-ceneo.png", Href = "https://www.ceneo.pl/" })
             </td>
         </tr>
     </tbody>
 </table>
 
-@Html.Partial("modules/_Title", new Title() { Text = "Twoje statystyki z ostatniego tygodnia", Subtitle = "(08.02.2018 - 15.02.2018)", Padding = "0"})
+<!-- @Html.Partial("modules/_Title", new Title() { Text = "Twoje statystyki z ostatniego tygodnia", Subtitle = "(08.02.2018 - 15.02.2018)", Padding = "0"}) -->
 
 <table style="width:100%;">
     <tbody>
@@ -68,70 +68,92 @@
 </table>
 
 
-@Html.Partial("modules/_Title", new Title() { Text = "Twoje Topowe produkty"})
+<!-- @Html.Partial("modules/_Title", new Title() { Text = "Twoje Topowe produkty"}) -->
 
-<table style="width:100%;">
-    <tbody>
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
         <tr>
-            <td style="padding: 0 10px;">
-                <table cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed">
+            <td style="padding: 10px;">
+                <table cellpadding="0" cellspacing="0"style="border:1px solid #e0e0e0;">
                     <tbody>
-                        <tr style="vertical-align: bottom;">
-                            <th style="padding: 10px; width: 50%; text-align: left; "></th>
-                            <th style="padding: 10px; width: 25%; text-align: right;">Przejścia</th>
-                            <th style="padding: 10px; width: 25%; text-align: right;">Śr. pozycja</th>
-                        </tr>
-                        <tr style="background-color: #E8F1F8">
-                            <td style="padding: 10px; width: 50%; text-align: left; ">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Apple EarPods MD827zM/A", Url = "#"})</td>
-                            <td style="padding: 10px; width: 25%; text-align: right;">278</td>
-                            <td style="padding: 10px; width: 25%; text-align: right;">1</td>
-                        </tr>
-                        <tr style="background-color: #F9FCFF">
-                            <td style="padding: 10px; width: 50%; text-align: left; ">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Overmax CAMSPOT 4.4", Url = "#"})</td>
-                            <td style="padding: 10px; width: 25%; text-align: right;">38</td>
-                            <td style="padding: 10px; width: 25%; text-align: right;">3</td>
-                        </tr>
-                        <tr style="background-color: #E8F1F8">
-                            <td style="padding: 10px; width: 50%; text-align: left; ">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Maxcom Mm28D", Url = "#"})</td>
-                            <td style="padding: 10px; width: 25%; text-align: right;">34</td>
-                            <td style="padding: 10px; width: 25%; text-align: right;">2</td>
+                        <tr>
+                            <td>
+                                <table style="width:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding: 0 10px;">
+                                                <table cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed">
+                                                    <tbody>
+                                                        <tr style="vertical-align: bottom;">
+                                                            <th style="padding: 10px; width: 50%; text-align: left; "></th>
+                                                            <th style="padding: 10px; width: 25%; text-align: right;">Przejścia</th>
+                                                            <th style="padding: 10px; width: 25%; text-align: right;">Śr. pozycja</th>
+                                                        </tr>
+                                                        <tr style="background-color: #E8F1F8">
+                                                            <td style="padding: 10px; width: 50%; text-align: left; ">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Apple EarPods MD827zM/A", Url = "#"})</td>
+                                                            <td style="padding: 10px; width: 25%; text-align: right;">278</td>
+                                                            <td style="padding: 10px; width: 25%; text-align: right;">1</td>
+                                                        </tr>
+                                                        <tr style="background-color: #F9FCFF">
+                                                            <td style="padding: 10px; width: 50%; text-align: left; ">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Overmax CAMSPOT 4.4", Url = "#"})</td>
+                                                            <td style="padding: 10px; width: 25%; text-align: right;">38</td>
+                                                            <td style="padding: 10px; width: 25%; text-align: right;">3</td>
+                                                        </tr>
+                                                        <tr style="background-color: #E8F1F8">
+                                                            <td style="padding: 10px; width: 50%; text-align: left; ">@Html.Partial("modules/_Anchor", new Anchor() { Text = "Maxcom Mm28D", Url = "#"})</td>
+                                                            <td style="padding: 10px; width: 25%; text-align: right;">34</td>
+                                                            <td style="padding: 10px; width: 25%; text-align: right;">2</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 0 0 20px 0;"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </td>
         </tr>
-        <tr>
-            <td style="padding: 0 0 20px 0;"></td>
-        </tr>
-    </tbody>
 </table>
 
-
-@Html.Partial("modules/_Title", new Title() { Text = "Ważne informacje"})
-
-<table cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed; width:100%; border-spacing: 10px; border-collapse: separate!important;">
-    <tbody>
+<!-- <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
         <tr>
-            <td style="width: 50%; vertical-align: top; border: 1px solid #dadada;">
-                @Html.Partial("modules/_Card", new Card() {Color = "#2170b9", ActionText = "zasil konto", ActionUrl = "#", Title = "Wkrótce zakończy się wsparcie w licytacji", Subtitle = "w Strefie polecanych ofert.", Text = "Środki przyznane przez [nazwa_providera] na wspieranie licytacji Twoich ofert w najbliższym czasie zostaną wyczerpane.", ImageUrl = "https://t3.ftcdn.net/jpg/01/97/02/06/160_F_197020671_8MpOKOzbcyCpa2ziCnAfVnsseNTyXY3V.jpg" })
-            </td>
-
-            <td style="width: 50%; vertical-align: top; border: 1px solid #dadada;">
-                @Html.Partial("modules/_Card", new Card() {Color = "#c20000", ActionText = "zaloguj się", ActionUrl = "https://shops.ceneo.pl/Subscriptions", Title = "Kończą Ci się środki", Subtitle = "na koncie przedpłat!", Text = "Stan środków na koncie przedpłat sklepu: [domena] w Ceneo.pl osiągnął zdefiniowany przez Ciebie poziom. Zaloguj się pod adresem:  i zasil konto!", ImageUrl = "https://t3.ftcdn.net/jpg/01/97/02/06/160_F_197020671_8MpOKOzbcyCpa2ziCnAfVnsseNTyXY3V.jpg" })
+            <td style="padding: 10px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e0e0e0;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "720", Align = "center", Padding = "0", Src = "https://image.ceneostatic.pl/data/article_picture/97/ac/0fb2-6edc-48f2-a1de-36f434403e25_large.jpg", Href = "https://www.ceneo.pl/" })
+                                @Html.Partial("modules/_Anchor", new Anchor() { Text = "Napisz nam jakich danych brakuje", Url = "#"})<br><br>
+                                @Html.Partial("modules/_Anchor", new Anchor() { Text = "Czy podoba Ci się Asystent?", Url = "#"})
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </td>
         </tr>
-    </tbody>
-</table>
+</table> -->
 
+
+@Html.Partial("modules/_Card", new Card() {Color = "#444444", ActionUrl = "#", ActionText="Czy podoba Ci się Asystent?", Title = "To jeszcze nie wszystko,", Subtitle="wkrótce dostarczymy Tobie więcej istotnych informacji!", Text = "<a style='color: #0071c5; text-decoration: none;' href='#'>Napisz nam jakich danych brakuje</a><br>", ImageUrl = "https://image.ceneostatic.pl/data/article_picture/97/ac/0fb2-6edc-48f2-a1de-36f434403e25_large.jpg" })
+
+@Html.Partial("Asistant/Table.cshtml")
+
+<!-- @Html.Partial("modules/_Title", new Title() { Text = "Ważne informacje"}) -->
+
+
+<!-- 
 @Html.Partial("modules/_Message", new Message() { Status = "Alert", Align = "left", Padding = "10px", Margin = "10px", Weight = "600", Title = "Wkrótce zakończy się wsparcie w licytacji w Strefie polecanych ofert.", Text = "Środki przyznane przez [nazwa_providera] na wspieranie licytacji Twoich ofert w najbliższym czasie zostaną wyczerpane." })
 
 @Html.Partial("modules/_Message", new Message() { Status = "Error", Align = "left", Padding = "10px", Margin = "10px", Weight = "600", ActionText = "Zasil konto", ActionUrl = "https://shops.ceneo.pl/Subscriptions", Title = "Kończą Ci się środki na koncie przedpłat!", Text = "Stan środków na koncie przedpłat sklepu: [domena] w Ceneo.pl osiągnął zdefiniowany przez Ciebie poziom. Zaloguj się pod adresem:  i zasil konto!" })
 
 @Html.Partial("modules/_Message", new Message() { Status = "Success", Align = "left", Padding = "10px", Margin = "10px", Weight = "600", Title = "Otrzymałeś znaczek Zaufane Opinie- gratulujemy!", Text = "Z radością informujemy, że otrzymałeś znaczek Zaufane Opinie. Dzięki temu możesz zacząć cieszyć się z szeregu korzyści. Posiadanie znaczka zwiększa 4Xkrotnie zainteresowanie ofertą oznaczonego sklepu. Teraz Oznaka jest widoczna przy każdej twojej ofercie na Ceneo.pl" })
 
-@Html.Partial("modules/_Message", new Message() { Status = "Info", Align = "left", Padding = "10px", Margin = "10px", Weight = "600", Title = "Wkrótce zakończy się wsparcie w licytacji w Strefie polecanych ofert.", Text = "Środki przyznane przez [nazwa_providera] na wspieranie licytacji Twoich ofert w najbliższym czasie zostaną wyczerpane." })
+@Html.Partial("modules/_Message", new Message() { Status = "Info", Align = "left", Padding = "10px", Margin = "10px", Weight = "600", Title = "Wkrótce zakończy się wsparcie w licytacji w Strefie polecanych ofert.", Text = "Środki przyznane przez [nazwa_providera] na wspieranie licytacji Twoich ofert w najbliższym czasie zostaną wyczerpane." }) -->
 
 
 @Html.Partial("modules/_Footer", new Footer())
-
-@Html.Partial("modules/_Separator", new Separator() { Height = "100px", BgColor = "#eeeeee" })
