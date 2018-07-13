@@ -1,0 +1,64 @@
+@using MailGenerator.ViewModels.Shared
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#eeeeee" })
+
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "81", Height = "37", Align = "right", Padding = "10px", Src = "https://www.ceneo.pl/Content/img/icons/logo-ceneo.png", Href = "https://www.ceneo.pl/" })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h1", Align = "center", Color = "#444444", Padding = "20px", Weight = "500", Text = "Jesteś teraz Użytkownikiem Ceneo.pl" })
+
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Align = "center", Src = "https://image.ibb.co/hATuRo/hero.png", Href = "https://www.ceneo.pl/ssl-Club" })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#444444", Padding = "20px", Weight = "400", Text = "Witamy w gronie Użytkowników Ceneo.pl – serwisu, który umożliwia łatwe i szybkie wyszukiwanie produktów oraz korzystnych ofert." })
+
+@Html.Partial("modules/_Paragraph", new Paragraph() { BgColor = "#ffffff", Color = "#444444", Align = "center", Padding = "20px", Text = "Jako zalogowany użytkownik dodawaj opinie, zdjęcia, zadawaj pytania i odpowiadaj na nie – pomagaj innym, aby ich zakupy stały się łatwiejsze i przyjemniejsze." })
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#ffffff" })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#444444", Padding = "20px", Weight = "500", Text = "Mamy dla Ciebie kilka usług ułatwiających zakupy internetowe:" })
+
+<table style="table-layout:fixed; width: 100%">
+    <tr>
+        <td style="width: 50%; vertical-align: top">
+            @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Align = "center", Width = "120", Height = "120", Src = "https://image2.ceneostatic.pl/data/maile/potwierdzenie_rejestracji/kup_teraz.png", Href = "https://www.ceneo.pl/ssl-Club" })
+            @Html.Partial("modules/_Paragraph", new Paragraph() { BgColor = "#ffffff", Color = "#444444", Align = "center", Padding = "10px", Text = "Rób zakupy w KUP TERAZ, aby mieć informacje o swoich zamówieniach w jednym miejscu -> Moje zamówienia w realizacji" })
+        </td>
+        <td style="width: 50%; vertical-align: top">
+            @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Align = "center", Width = "120", Height = "120", Src = "https://image2.ceneostatic.pl/data/maile/potwierdzenie_rejestracji/opinie.png", Href = "https://www.ceneo.pl/ssl-Club" })
+            @Html.Partial("modules/_Paragraph", new Paragraph() { BgColor = "#ffffff", Color = "#444444", Align = "center", Padding = "10px", Text = "Dziel się swoimi doświadczeniami i wrażeniami w opiniach o sklepie, produkcie, pytaniach i odpowiedziach" })
+        </td>
+    </tr>
+</table>
+<table style="table-layout:fixed; width: 100%">
+    <tr>
+        <td style="width: 50%; vertical-align: top">
+            @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Align = "center", Width = "120", Height = "120", Src = "https://image2.ceneostatic.pl/data/maile/potwierdzenie_rejestracji/konto.png", Href = "https://www.ceneo.pl/ssl-Club" })
+            @Html.Partial("modules/_Paragraph", new Paragraph() { BgColor = "#ffffff", Color = "#444444", Align = "center", Padding = "5px", Text = "Lista ulubionych, preferowana forma dostawy i wiele innych funkcji w zakładce Moje Ceneo" })
+        </td>
+        <td style="width: 50%; vertical-align: top">
+            @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Align = "center", Width = "120", Height = "120", Src = "https://image2.ceneostatic.pl/data/maile/potwierdzenie_rejestracji/zdjecia.png", Href = "https://www.ceneo.pl/ssl-Club" })
+            @Html.Partial("modules/_Paragraph", new Paragraph() { BgColor = "#ffffff", Color = "#444444", Align = "center", Padding = "10px", Text = "Dodawaj i przeglądaj zdjęcia przy opiniach produktów" })
+        </td>
+    </tr>
+</table>
+<table style="table-layout:fixed; width: 100%">
+    <tr>
+        <td></td>
+        <td style="width: 50%; vertical-align: top">
+            @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Align = "center", Width = "120", Height = "120", Src = "https://image2.ceneostatic.pl/data/maile/potwierdzenie_rejestracji/ceneo_punkty.png", Href = "https://www.ceneo.pl/ssl-Club" })
+            @Html.Partial("modules/_Paragraph", new Paragraph() { BgColor = "#ffffff", Color = "#444444", Align = "center", Padding = "5px", Text = "Zdobywaj CeneoPunkty za swój wkład i wymieniaj je na nagrody w Klubie Łowców Nagród" })
+        </td>
+        <td></td>
+    </tr>
+</table>
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#444444", Padding = "20px", Weight = "500", Text = "oraz skorzystaj z wielu innych funkcji dostępnych w Ceneo.pl" })
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "10px", BgColor = "#ffffff" })
+
+@Html.Partial("modules/_Button", new Button() { BgColor = "#f86210", Color = "#ffffff", Align = "center", Padding = "10px", Size="Big", Text = "SPRAWDŹ", Href = "https://www.ceneo.pl/ssl-Club" })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h5", Align = "center", Color = "#444444", Padding = "10px", Weight = "400", Text = "W załączniku tego maila znajdziesz Regulamin Świadczenia Usług Dla Użytkowników Ceneo.pl" })
+
+@Html.Partial("modules/_Footer", new Footer())
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#eeeeee" })
