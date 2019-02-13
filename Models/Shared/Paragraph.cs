@@ -7,5 +7,7 @@
         public string BgColor { get; set; }
         public string Align { get; set; }
         public string Padding { get; set; }
+        public string PaddingX { get; set; }
+        public string PaddingY { get; set; }
     }
 }

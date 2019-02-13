@@ -120,6 +120,12 @@
         </tr>
 </table>
 
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "700", Align = "center", Padding = "10", Src = "http://jira.ceneo.pl/secure/attachment/155900/Artboard%201%20copy.png", Href = "https://www.ceneo.pl/" })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Color = "#444444", Padding = "10px", Weight = "500", Text = "[liczba] - tylu Twoim ofertom brakuje bardzo niewiele by znaleźć się w TOP3." })
+@Html.Partial("modules/_Paragraph", new Paragraph() { BgColor = "#ffffff", Color = "#444444", Padding= "0 10px 10px 10px", Text = "Ustaw lub podnieś obecną stawkę licytacji i umieść swoją ofertę w sekcji wybieranej przez 60% kupujących." })
+@Html.Partial("modules/_Button", new Button() { BgColor = "#0071C5", Color = "#ffffff", Align = "center", Padding = "10px", Text = "Przejdź do zakładki", Href = "https://shops.ceneo.pl/ShopCommercialization/BiddingProducts " })
+
 <!-- <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
         <tr>
             <td style="padding: 10px;">
@@ -138,10 +144,7 @@
         </tr>
 </table> -->
 
-
-@Html.Partial("modules/_Card", new Card() {Color = "#444444", ActionUrl = "#", ActionText="Czy podoba Ci się Asystent?", Title = "To jeszcze nie wszystko,", Subtitle="wkrótce dostarczymy Tobie więcej istotnych informacji!", Text = "<a style='color: #0071c5; text-decoration: none;' href='#'>Napisz nam jakich danych brakuje</a><br>", ImageUrl = "https://image.ceneostatic.pl/data/article_picture/97/ac/0fb2-6edc-48f2-a1de-36f434403e25_large.jpg" })
-
-@Html.Partial("Asistant/Table.cshtml")
+<!-- @Html.Partial("Asistant/Table.cshtml") -->
 
 <!-- @Html.Partial("modules/_Title", new Title() { Text = "Ważne informacje"}) -->
 
