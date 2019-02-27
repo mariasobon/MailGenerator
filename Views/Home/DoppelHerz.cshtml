@@ -1,0 +1,22 @@
+@using MailGenerator.ViewModels.Shared
+
+<!-- @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "81", Padding = "10px", Align = "center", Src = "https://www.ceneo.pl/Content/img/icons/logo-ceneo.png", Href = "https://www.ceneo.pl/" }) -->
+
+
+<table  cellpadding="0" cellspacing="0" style="width:100%;">
+    <tbody>
+        <tr>
+            <td>
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "360", Align = "center", Padding = "0", Src = "https://image.ceneostatic.pl/data/custom_images/21/custom_image.png", Href = "https://www.ceneo.pl/45861034#DoppelHerz-spokoj" })
+            </td>
+            <td>
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "360", Align = "center", Padding = "0", Src = "https://image.ceneostatic.pl/data/custom_images/22/custom_image.png", Href = "https://www.ceneo.pl/43000729#DoppelHerz2-sen" })
+            </td>
+
+        </tr>
+</tbody>
+</table>
+
+@Html.Partial("modules/_Footer", new Footer())
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "100px", BgColor = "#eeeeee" })
