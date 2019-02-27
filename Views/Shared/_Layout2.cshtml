@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        body, table, td, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+    </style>
+</head>
+
+@{
+    var color1 = "#f7941e";
+    var color2 = "#f86210";
+    // string color1 = "#003c5d";
+    // string color2 = "#0374a0";
+    string color3 = "#fafafa";
+
+    var height1 = "200px";
+    var height2 = "100px";
+}
+
+<body style="margin: 0; font-weight: normal; margin: 5px 0; font-family:&quot;Segoe UI&quot, Roboto, Helvetica, Arial, sans-serif;">
+    <table border="0" cellspacing="0" cellpadding="0" style="width:100%">
+        <tbody>
+            <tr>
+                <td style="background-color:@color1;padding: 0 0 0 0; height:50px;"colspan="3"></td>
+            </tr>
+            <tr>
+                <td style="background-color:@color1; padding: 0 0 0 0; height:@height1;">&nbsp</td>
+                <td style="background-color:white ; padding: 0 0 0 0;" rowspan="3" width="720;">@RenderBody()</td>
+                <td style="background-color:@color1; padding: 0 0 0 0; height:@height1;">&nbsp</td>
+            </tr>
+            <tr>
+                <td style="background-color:@color2; padding: 0 0 0 0; height:@height2;">&nbsp</td>
+                <td style="background-color:@color2; padding: 0 0 0 0; height:@height2;">&nbsp</td>
+            </tr>
+            <tr>
+                <td style="background-color:@color3; padding: 0 0 0 0;">&nbsp</td>
+                <td style="background-color:@color3; padding: 0 0 0 0;">&nbsp</td>
+            </tr>
+            <tr>
+                <td style="background-color:@color3; padding: 0 0 0 0; height:50px;" colspan="3"></td>
+            </tr>
+        </tbody>
+</body>
+</html>

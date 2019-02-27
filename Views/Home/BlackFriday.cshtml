@@ -1,0 +1,54 @@
+@using MailGenerator.ViewModels.Shared
+
+<table  cellpadding="0" cellspacing="0" >
+    <tbody>
+        <tr>
+            <td style="background-color: #161616">
+
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "81", Align = "right", Padding = "10px", Src = "https://www.ceneo.pl/Content/img/icons/logo-ceneo.png", Href = "https://www.ceneo.pl/" })
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "720", Align = "center", Padding = "0", Src = "https://image.ceneostatic.pl/data/custom_images/38/custom_image.png", Href = "https://www.ceneo.pl/wydarzenia/black-friday" })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#ffffff", Padding = "10px", Weight = "500", Text = "Znajdź najlepsze promocje dla siebie" })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "left", Color = "#ffffff", Padding = "10px", Weight = "500", Text = "Dla niej" })
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "218", Align = "right", Padding = "10px", Src = "https://image.ceneostatic.pl/data/custom_images/47/custom_image.png", Href = "https://www.ceneo.pl/Perfumy_i_wody_damskie;discount.htm" })
+            </td>
+            <td>
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "218", Align = "right", Padding = "10px", Src = "https://image.ceneostatic.pl/data/custom_images/35/custom_image.png", Href = "https://www.ceneo.pl/Torebki_damskie;discount.htm" })
+            </td>
+            <td>
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "218", Align = "right", Padding = "10px", Src = "https://image.ceneostatic.pl/data/custom_images/36/custom_image.png", Href = "https://www.ceneo.pl/Smartwatche_i_Smartbandy;discount.htm" })
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "left", Color = "#ffffff", Padding = "10px", Weight = "500", Text = "Dla niego" })
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "218", Align = "right", Padding = "10px", Src = "https://image.ceneostatic.pl/data/custom_images/46/custom_image.png", Href = "https://www.ceneo.pl/Smartfony;discount.htm" })
+            </td>
+            <td>
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "218", Align = "right", Padding = "10px", Src = "https://image.ceneostatic.pl/data/custom_images/32/custom_image.png", Href = "https://www.ceneo.pl/Sluchawki;discount.htm" })
+            </td>
+            <td>
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "218", Align = "right", Padding = "10px", Src = "https://image.ceneostatic.pl/data/custom_images/33/custom_image.png", Href = "https://www.ceneo.pl/Zegarki/Typ:Meskie;discount.htm" })
+            </td>
+        </tr>
+    </tbody>
+</table>
+</td>
+        </tr>
+    </tbody>
+</table>
+@Html.Partial("modules/_Footer", new Footer())
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "100px", BgColor = "#eeeeee" })
