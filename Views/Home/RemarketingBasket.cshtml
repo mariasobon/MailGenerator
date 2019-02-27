@@ -13,33 +13,60 @@
     </tbody>
 </table>
 
-@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#444444", Padding = "30px 10px 10px 10px", Weight = "400", Text = "Dzień dobry <span style='font-weight: 500'>Paweł</span>," })
-@Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#444444", Padding = "0 10px 30px 10px", Weight = "400", Text = "W Twoim koszyku znajdują się interesujące produkty.<br>Nie zwlekaj, to świetna okazja!" })
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#444444", Padding = "30px 10px 5px 10px", Weight = "400", Text = "Dzień dobry <span style='font-weight: 500'>Paweł</span>," })
+<table cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed">
+    <tbody>
+        <tr>
+            <td>
+
+            </td>
+            <td style="width: 200px">
+                @Html.Partial("modules/_Separator", new Separator() { Height = "2px", BgColor = "#f86210" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#444444", Padding = "5px 10px 30px 10px", Weight = "400", Text = "W Twoim koszyku znajdują się interesujące produkty.<br>Nie zwlekaj, to świetna okazja!" })
 
 <table cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed">
     <tbody>
         <tr>
             <td>
                 <a style="text-decoration: none" href='https://www.ceneo.pl/73343830#tag=alert-link'>
-                    @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "200", Height = "100", Align = "center", Padding = "20px 10px 10px 10px", Src = "//image.ceneostatic.pl/data/products/73343830/f-asus-vivobook-s330-13-3-i5-8gb-256gb-win10-s330uaey028t8gb.jpg", Href = "#tag=alert-miniatura" })
+                    @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "100", Align = "center", Padding = "20px 10px 10px 10px", Src = "//image.ceneostatic.pl/data/products/73343830/f-asus-vivobook-s330-13-3-i5-8gb-256gb-win10-s330uaey028t8gb.jpg", Href = "#tag=alert-miniatura" })
                     
-                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#444444", Padding = "10px", Weight = "400", Text = "ASUS VIVOBOOK S330" })         
-                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#212121", Padding = "0 10px 10px 10px", Weight = "400", Text = "<span style='color:#f86210'><b>468,00</b></span> zł" })
+                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h4", Align = "center", Color = "#444444", Padding = "10px 10px 5px 10px", Weight = "400", Text = "ASUS VIVOBOOK S330" })         
+                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#212121", Padding = "0 10px 10px 10px", Weight = "400", Text = "<span style='color:#f86210'><b style='font-size: 24px'>468</b>,00</span> zł" })
                 </a>
-                @Html.Partial("modules/_Button", new Button() { BgColor = "#f86210", Color = "#ffffff", Align = "center", Padding = "0 10px 20px 10px", Text = "KUP TERAZ", Href = "https://www.ceneo.pl/73343830#tag=alert-button" })
+                @Html.Partial("modules/_Button", new Button() { BgColor = "#f86210", Size = "Small", Color = "#ffffff", Align = "center", Padding = "0 10px 20px 10px", Text = "KUP TERAZ", Href = "https://www.ceneo.pl/73343830#tag=alert-button" })
             </td>
             <td>
                 <a style="text-decoration: none" href='https://www.ceneo.pl/73343830#tag=alert-link'>
-                    @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "200", Height = "100", Align = "center", Padding = "20px 10px 10px 10px", Src = "https://image.ceneostatic.pl/data/products/76367847/f-samsung-galaxy-s10-sm-g973-128gb-prism-black.jpg?=c90bc", Href = "#tag=alert-miniatura" })
+                    @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "100", Align = "center", Padding = "20px 10px 10px 10px", Src = "https://image.ceneostatic.pl/data/products/76367847/f-samsung-galaxy-s10-sm-g973-128gb-prism-black.jpg?=c90bc", Href = "#tag=alert-miniatura" })
                     
-                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#444444", Padding = "10px", Weight = "400", Text = "SAMSUNG GALAXY S10" })         
-                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#212121", Padding = "0 10px 10px 10px", Weight = "400", Text = "<span style='color:#f86210'><b>3949,00</b></span> zł" })
+                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h4", Align = "center", Color = "#444444", Padding = "10px 10px 5px 10px", Weight = "400", Text = "SAMSUNG GALAXY S10" })         
+                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#212121", Padding = "0 10px 10px 10px", Weight = "400", Text = "<span style='color:#f86210'><b style='font-size: 24px'>3949</b>,00</span> zł" })
                 </a>
-                @Html.Partial("modules/_Button", new Button() { BgColor = "#f86210", Color = "#ffffff", Align = "center", Padding = "0 10px 20px 10px", Text = "KUP TERAZ", Href = "https://www.ceneo.pl/73343830#tag=alert-button" })
+                @Html.Partial("modules/_Button", new Button() { BgColor = "#f86210", Size = "Small", Color = "#ffffff", Align = "center", Padding = "0 10px 20px 10px", Text = "KUP TERAZ", Href = "https://www.ceneo.pl/73343830#tag=alert-button" })
+            </td>
+            <td>
+                <a style="text-decoration: none" href='https://www.ceneo.pl/73343830#tag=alert-link'>
+                    @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "100", Align = "center", Padding = "20px 10px 10px 10px", Src = "https://image.ceneostatic.pl/data/products/70068802/f-gopro-hero-7-black-chdhx701rw.jpg", Href = "#tag=alert-miniatura" })
+                    
+                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h4", Align = "center", Color = "#444444", Padding = "10px 10px 5px 10px", Weight = "400", Text = "KAMERA GOPRO HERO 7" })         
+                    @Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#212121", Padding = "0 10px 10px 10px", Weight = "400", Text = "<span style='color:#f86210'><b style='font-size: 24px'>1748</b>,00</span> zł" })
+                </a>
+                @Html.Partial("modules/_Button", new Button() { BgColor = "#f86210", Size = "Small", Color = "#ffffff", Align = "center", Padding = "0 10px 20px 10px", Text = "KUP TERAZ", Href = "https://www.ceneo.pl/73343830#tag=alert-button" })
             </td>
     </tr>
     </tbody>
 </table>
+
+
 @Html.Partial("modules/_Separator", new Separator() { Height = "1px", BgColor = "#eeeeee" })
 
 
