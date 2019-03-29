@@ -1,0 +1,86 @@
+@using MailGenerator.ViewModels.Shared
+
+<table cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed; background-color: #eeeeee">
+    <tbody>
+        <tr>
+            <td width="620">
+                @Html.Partial("modules/_Heading", new Heading() { Tag = "h1", Align = "left", Color = "#212121", Padding = "0 10px", Weight = "500", Text = "Karty podarunkowe Ceneo.pl" })
+                @Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "left", Color = "#212121", Padding = "0 10px", Weight = "400", Text = "Zawsze trafiony prezent na każdą okazję" })
+            </td>
+            <td width="100">
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "81", Align = "right", Padding = "10px", Src = "https://www.ceneo.pl/Content/img/icons/logo-ceneo.png", Href = "https://www.ceneo.pl#tag=alert-logo" })
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#eeeeee" })
+
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "720", Align = "center", Padding = "0", Src = "https://image.ceneostatic.pl/data/custom_images/324/custom_image.png", Href = "https://www.ceneo.pl/" })
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#003E7E", Padding = "20px 10px 0px 10px", Weight = "500", Text = "<span style='font-size: 1.5em'>Gratulacje!</span>" })
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#212112", Padding = "0 10px 5px 10px", Weight = "400", Text = "Otrzymałeś kartę podarunkową o wartości <span style='font-weight: 600; font-size: 1.5em'>100zł</span>" })
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#ffffff" })
+
+<!-- karta podarunkowa -->
+
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Align = "center", Padding = "0", Src = "https://image.ceneostatic.pl/data/custom_images/331/custom_image.png", Href = "https://www.ceneo.pl/" })
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h3", Align = "center", Color = "#212121", Padding = "10px 10px 0px 10px", Weight = "500", Text = "Twój kod:" })
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#003E7E", Padding = "0px 10px 10px 10px", Weight = "500", Text = "<span style='font-size: 1.5em'>8H55-4RM8-HY3U-9I79</span>" })
+
+<table cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed">
+    <tbody>
+        <tr>
+            <td>
+
+            </td>
+            <td style="width: 350px">
+                @Html.Partial("modules/_Separator", new Separator() { Height = "2px", BgColor = "#f86210" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- koniec karty -->
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h4", Align = "center", Color = "#212112", Padding = "10px 10px 5px 10px", Weight = "400", Text = "Termin ważności karty: 12.03.2019 do 11.03.2020" })
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "50px", BgColor = "#ffffff" })
+
+<table cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed">
+    <tbody>
+        <tr>
+            <td style="widht: 300px;">
+                @Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "300", Align = "center", Padding = "0", Src = "https://image.ceneostatic.pl/data/custom_images/326/custom_image.png", Href = "https://www.ceneo.pl/" })
+            </td>
+            <td>
+                @Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "left", Color = "#003E7E", Padding = "20px 10px 10px 0px;", Weight = "500", Text = "Jak skorzystać z karty?" })
+
+                <ul>
+                    <li>
+                        Kartę można wykorzystać na zakupu w serwisie Ceneo.pl
+                    </li>
+                    <li>
+                        Karta została aktywowana w dniu zakupu
+                    </li>
+                    <li>
+                        Nie wykorzystane środki nieprzepadają. Z karty można korzystać wielokrotnie.
+                    </li>
+                    <li>
+                        Karta obniża wartość towaru jak i koszty dostawy.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#212112", Padding = "10px 10px 0 10px", Weight = "400", Text = "Masz dodatkowe pytania?" })
+@Html.Partial("modules/_Paragraph", new Paragraph() { BgColor = "#ffffff", Color = "#444444", Align = "center", Padding = "10px", Text = "Sprawdź FAQu na Naszej stronie" })
+@Html.Partial("modules/_Button", new Button() { BgColor = "#0071C5", Color = "#ffffff", Align = "center", Padding = "10px", Text = "FAQ", Href = "https://www.ceneo.pl/uslugi/karty-podarunkowe-temp" })
+
+
+@Html.Partial("modules/_Footer", new Footer())

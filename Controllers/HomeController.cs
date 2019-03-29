@@ -80,6 +80,13 @@ namespace MailGenerator.Controllers
             ViewBag.Title = "Example Mail";
             return View();
         }
+
+        public IActionResult CouponCodeCards()
+        {
+            ViewBag.CustomFont = "font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+            ViewBag.Title = "CouponCodeCards";
+            return View();
+        }
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
