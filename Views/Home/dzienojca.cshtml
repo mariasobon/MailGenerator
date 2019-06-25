@@ -1,0 +1,94 @@
+@using MailGenerator.ViewModels.Shared
+
+@{
+  var primaryTextColor = "#4d4d4d";
+  var primaryColor = "#f86210";
+  var secondaryColor = "#0071c5";
+  var ProfitUrl = "@ProfitUrl";
+}
+
+<table style="width:100%;">
+  <tbody>
+    <tr>
+      <td style="background-color: #eee">
+        @Html.Partial("modules/_Img", new Img() {Alt = "Ceneo.pl", Width = "138", Align = "left", Padding = "20px", Src = "https://image.ceneostatic.pl/data/custom_images/485/custom_image.png" })
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+@*----- Image -----*@
+
+@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Width = "720", Align = "center", Padding = "0", Src = "https://image.ceneostatic.pl/data/custom_images/546/custom_image.png", Href = "https://www.ceneo.pl/wydarzenia/dzien-ojca" })
+
+
+@*----- Separator -----*@
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#eeeeee" })
+
+@*----- Separator -----*@
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#ffffff" })
+
+@*----- Heading -----*@
+
+@Html.Partial("modules/_Heading", new Heading() { Tag = "h2", Align = "center", Color = "#444444", Padding = "0px", Weight = "300", Text = "Inspiracje na prezent dla Taty" })
+
+
+@*----- Separator -----*@
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#ffffff" })
+
+
+<table cellspacing="0" style="width:100%">
+    <tbody>
+        <tr>
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/532/custom_image.png", Href = "http://bit.ly/koszula_simone" })
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/531/custom_image.jpeg", Href = "http://bit.ly/2WEUxjm" })
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/533/custom_image.png", Href = "http://bit.ly/biale_polo" })
+        </tr>
+    </tbody>
+</table>
+
+<table cellspacing="0" style="width:100%">
+    <tbody>
+        <tr>
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/534/custom_image.png", Href = "http://bit.ly/mucha_conti" })
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/535/custom_image.png", Href = "http://bit.ly/koszula2_conti" })
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/536/custom_image.png", Href = "http://bit.ly/2MIakhI" })
+        </tr>
+    </tbody>
+</table>
+
+<table cellspacing="0" style="width:100%">
+    <tbody>
+        <tr>
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/539/custom_image.png", Href = "http://bit.ly/honor_aeteka" })
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/524/custom_image.png", Href = "http://bit.ly/aeteka-mailing" })
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/540/custom_image.png", Href = "http://bit.ly/rejestrator_aeteka" })
+        </tr>
+    </tbody>
+</table>
+
+<table cellspacing="0" style="width:100%">
+    <tbody>
+        <tr>
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/541/custom_image.png", Href = "http://bit.ly/latarka_aeteka" })
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/542/custom_image.png", Href = "http://bit.ly/latarka_eatka2" })
+            <td width="240">@Html.Partial("modules/_Img", new Img() { Alt = "Ceneo.pl", Height = "218", Align = "center", Padding = "5px", Src = "https://image.ceneostatic.pl/data/custom_images/544/custom_image.png", Href = "http://bit.ly/xperia_aeteka" })
+        </tr>
+    </tbody>
+</table>
+
+@*----- Separator -----*@
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#ffffff" })
+
+@*----- Separator -----*@
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "20px", BgColor = "#eeeeee" })
+
+@Html.Partial("modules/_Footer", new Footer())
+
+@Html.Partial("modules/_Separator", new Separator() { Height = "100px", BgColor = "#eeeeee" })

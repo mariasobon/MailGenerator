@@ -21,11 +21,24 @@ namespace MailGenerator.Controllers
             ViewBag.Title = "Example Mail";
             return View();
         }
+       
+        public IActionResult leifheit()
+        {
+            ViewBag.CustomFont = "font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+            ViewBag.Title = "leifheit";
+            return View();
+        }
+
+        public IActionResult dzienojca()
+        {
+            ViewBag.CustomFont = "font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+            ViewBag.Title = "dzien-ojca";
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-
     }
 }
